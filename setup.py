@@ -19,16 +19,15 @@ def _parse_requirements(file):
         return [line.rstrip() for line in f if not (line.isspace() or line.startswith("#"))]
 
 
-setuptools.setup(name="hj_reachability",
+setuptools.setup(name="cbvf_reachability",
                  version=_get_version(),
-                 description="Hamilton-Jacobi reachability analysis in JAX.",
+                 description="Hamilton-Jacobi reachability analysis for use in Control Barrier Value Functions in JAX.",
                  long_description=open("README.md").read(),
                  long_description_content_type="text/markdown",
-                 author="Ed Schmerling",
-                 author_email="ednerd@gmail.com",
-                 url="https://github.com/StanfordASL/hj_reachability",
+                 author="Bartosz Jemioł",
+                 author_email="b.s.jemiol@student.tudelft.nl",
+                 url="https://github.com/Extrabartek/cbvf_reachabilityy",
                  license="MIT",
                  packages=setuptools.find_packages(),
                  install_requires=_parse_requirements("requirements.txt"),
-                 tests_require=_parse_requirements("requirements-test.txt"),
                  python_requires="~=3.8")
