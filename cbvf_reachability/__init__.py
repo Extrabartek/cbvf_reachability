@@ -1,14 +1,14 @@
-from hj_reachability import artificial_dissipation
-from hj_reachability import boundary_conditions
-from hj_reachability import finite_differences
-from hj_reachability import sets
-from hj_reachability import solver
-from hj_reachability import systems
-from hj_reachability import time_integration
-from hj_reachability import utils
-from hj_reachability.dynamics import ControlAndDisturbanceAffineDynamics, Dynamics
-from hj_reachability.grid import Grid
-from hj_reachability.solver import SolverSettings, solve, step
+from cbvf_reachability import artificial_dissipation
+from cbvf_reachability import boundary_conditions
+from cbvf_reachability import finite_differences
+from cbvf_reachability import sets
+from cbvf_reachability import solver
+from cbvf_reachability import systems
+from cbvf_reachability import time_integration
+from cbvf_reachability import utils
+from cbvf_reachability.dynamics import ControlAndDisturbanceAffineDynamics, Dynamics
+from cbvf_reachability.grid import Grid
+from cbvf_reachability.solver import SolverSettings, solve, step
 
 __version__ = "0.7.0"
 
