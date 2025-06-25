@@ -5,13 +5,13 @@ _CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 def _get_version():
-    with open(os.path.join(_CURRENT_DIR, "hj_reachability", "__init__.py")) as f:
+    with open(os.path.join(_CURRENT_DIR, "cbvf_reachability", "__init__.py")) as f:
         for line in f:
             if line.startswith("__version__") and "=" in line:
                 version = line[line.find("=") + 1:].strip(" '\"\n")
                 if version:
                     return version
-        raise ValueError("`__version__` not defined in `hj_reachability/__init__.py`")
+        raise ValueError("`__version__` not defined in `cbvf_reachability/__init__.py`")
 
 
 def _parse_requirements(file):
