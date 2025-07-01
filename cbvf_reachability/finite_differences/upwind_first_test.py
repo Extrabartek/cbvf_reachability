@@ -4,8 +4,8 @@ from absl.testing import absltest
 import jax
 import numpy as np
 
-from hj_reachability import boundary_conditions
-from hj_reachability.finite_differences import upwind_first
+from cbvf_reachability import boundary_conditions
+from cbvf_reachability.finite_differences import upwind_first
 
 
 class UpwindFirstTest(absltest.TestCase):

@@ -1,7 +1,7 @@
 from absl.testing import absltest
 import numpy as np
 
-from hj_reachability import boundary_conditions
+from cbvf_reachability import boundary_conditions
 
 
 class BoundaryConditionsTest(absltest.TestCase):

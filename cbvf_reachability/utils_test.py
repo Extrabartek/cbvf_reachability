@@ -3,7 +3,7 @@ import jax
 import jax.numpy as jnp
 import numpy as np
 
-from hj_reachability import utils
+from cbvf_reachability import utils
 
 
 class UtilsTest(absltest.TestCase):

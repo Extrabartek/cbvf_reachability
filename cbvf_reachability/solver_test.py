@@ -1,7 +1,7 @@
 from absl.testing import absltest
 import numpy as np
 
-import hj_reachability as hj
+import cbvf_reachability as hj
 
 
 class SolverTest(absltest.TestCase):

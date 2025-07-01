@@ -2,8 +2,8 @@ import jax
 import jax.numpy as jnp
 import numpy as np
 
-from hj_reachability import sets
-from hj_reachability import utils
+from cbvf_reachability import sets
+from cbvf_reachability import utils
 
 
 def global_lax_friedrichs(partial_max_magnitudes, states, time, values, left_grad_values, right_grad_values):

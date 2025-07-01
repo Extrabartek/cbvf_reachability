@@ -3,7 +3,7 @@ import abc
 from flax import struct
 import jax.numpy as jnp
 
-from hj_reachability import utils
+from cbvf_reachability import utils
 
 from typing import Any
 

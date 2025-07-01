@@ -2,7 +2,7 @@ from absl.testing import absltest
 import jax
 import numpy as np
 
-from hj_reachability import sets
+from cbvf_reachability import sets
 
 
 class SetsTest(absltest.TestCase):

@@ -1,7 +1,7 @@
 import jax.numpy as jnp
 
-from hj_reachability import dynamics
-from hj_reachability import sets
+from cbvf_reachability import dynamics
+from cbvf_reachability import sets
 
 
 class Air3d(dynamics.ControlAndDisturbanceAffineDynamics):

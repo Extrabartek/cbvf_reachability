@@ -3,8 +3,8 @@ import jax
 import jax.numpy as jnp
 import numpy as np
 
-from hj_reachability import grid as _grid
-from hj_reachability import sets
+from cbvf_reachability import grid as _grid
+from cbvf_reachability import sets
 
 
 class BoundaryConditionsTest(absltest.TestCase):

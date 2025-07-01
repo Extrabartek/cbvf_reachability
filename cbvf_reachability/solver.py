@@ -6,9 +6,9 @@ import jax
 import jax.numpy as jnp
 import numpy as np
 
-from hj_reachability import artificial_dissipation
-from hj_reachability import time_integration
-from hj_reachability.finite_differences import upwind_first
+from cbvf_reachability import artificial_dissipation
+from cbvf_reachability import time_integration
+from cbvf_reachability.finite_differences import upwind_first
 
 from typing import Callable, Text
 

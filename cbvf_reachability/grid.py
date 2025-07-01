@@ -4,13 +4,13 @@ from flax import struct
 import jax.numpy as jnp
 import numpy as np
 
-from hj_reachability import boundary_conditions as _boundary_conditions
-from hj_reachability.finite_differences import upwind_first
-from hj_reachability import sets
-from hj_reachability import utils
+from cbvf_reachability import boundary_conditions as _boundary_conditions
+from cbvf_reachability.finite_differences import upwind_first
+from cbvf_reachability import sets
+from cbvf_reachability import utils
 
 from typing import Any, Callable, Optional, Tuple, Union
-from hj_reachability.boundary_conditions import BoundaryCondition
+from cbvf_reachability.boundary_conditions import BoundaryCondition
 
 Array = Any
 
@@ -97,7 +97,7 @@ class Grid:
 
     def grad_values(self, values: Array, upwind_scheme: Optional[Callable] = None) -> Array:
         """Returns a central difference-based approximation of `grad_values`."""
-        # TODO: Implement central difference schemes in `hj_reachability.finite_differences`.
+        # TODO: Implement central difference schemes in `cbvf_reachability.finite_differences`.
         if upwind_scheme is None:
             upwind_scheme = upwind_first.first_order
         return sum(self.upwind_grad_values(upwind_scheme, values)) / 2
