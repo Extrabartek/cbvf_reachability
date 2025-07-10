@@ -50,7 +50,7 @@ def euler_step_cbvf(solver_settings, dynamics, grid, time, values, time_step=Non
         np.arange(grid.ndim))(grid.states, values, left_grad_values, right_grad_values, dissipation_coefficients)
 
     dvalues_dt = -solver_settings.hamiltonian_postprocessor(time_direction * (hamiltonian_values
-                                                                              + solver_settings.gamma * values))
+                                                                              - solver_settings.gamma * values))
     if time_step is None:
         if time_step_bound is None:
             time_step_bound = 1 / jnp.max(jnp.sum(dissipation_coefficients / jnp.array(grid.spacings), -1))
